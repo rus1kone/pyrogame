@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FLAR Energy Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <span id="username">Username</span>
+        <span id="tokenBalance">Токены: 300</span>
+    </header>
+    <div id="gameArea" >
+        <div class="grid">
+            <div class="cell station">🔥</div> <!-- Начальная станция -->
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+        </div>
+    </div>
+    <button class="buy-btn" id="buyButton">
+        Увеличить мощность <span id="price">100f</span>
+    </button>
+    <footer>
+        <button class="footer-btn" id="invite">💌</button>
+        <button class="footer-btn footer-btn--main" id="home">🚀</button>
+        <button class="footer-btn" id="tasks">📋</button>
+    </footer>
+
+    <!-- Модальное окно для уведомлений -->
+    <div id="myModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <p id="modalText">Недостаточно средств для покупки улучшения.</p>
+        </div>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>
